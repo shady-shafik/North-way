@@ -1,6 +1,14 @@
 :root{
     --main-color:#28A745
 }
+html,body
+{
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -48,12 +56,23 @@ input[type = submit]{
 
 .setting-box .icon{
     position: absolute;
-    left: -61px;
+    right: 200px;
     top: 0px;
     padding: 3px 10px;
     color: var(--main-color);
 }
 
+@media (min-width: 576px ){
+    .setting-box .icon{
+        right:  200px;
+    }
+}
+
+@media (min-width: 992px ){
+    .setting-box .icon{
+        right: 200px;
+    }
+}
 
 .setting-box .setting-container{
     text-align: center;
